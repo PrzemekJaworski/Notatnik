@@ -1,0 +1,141 @@
+/* 📝 Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 📝 Body Styling */
+body {
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(243, 243, 243);
+}
+
+/* 📝 Top Menu */
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  height: 120px;
+}
+
+/* 📝 Buttons in Menu & Panel */
+.menu button,
+.note-panel .save,
+.note-panel .cancel {
+  padding: 12px 25px;
+  background: none;
+  border: 1px solid #999;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* 📝 Hover Effect for Buttons */
+.menu button:hover,
+.note-panel .save:hover,
+.note-panel .cancel:hover {
+  background-color: #333;
+  color: #ddd;
+}
+
+/* 📝 Icons */
+.icon {
+  margin-right: 10px;
+}
+
+/* 📝 Add Button */
+.add {
+  margin-right: 20px;
+}
+
+/* 📝 Note Display Area */
+.note-area {
+  display: flex;
+  align-items: start;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+/* 📝 Note Box */
+.note {
+  margin: 40px 20px;
+  width: 240px;
+  background-color: rgb(255, 243, 0);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+}
+
+/* 📝 Note Header */
+.note-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.06);
+}
+
+/* 📝 Delete Note Button */
+.note-header .delete-note {
+  background: none;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* 📝 Note Content */
+.note-body {
+  padding: 20px 15px;
+  font-size: 14px;
+}
+
+/* 📝 Note Panel (for adding new notes) */
+.note-panel {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px 0;
+  width: 600px;
+  background-color: #fff;
+  box-shadow: 0 0 10px black;
+  border-radius: 5px;
+}
+
+/* 📝 Note Panel Title */
+.note-panel h2 {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/* 📝 Form Labels */
+.note-panel label {
+  margin-bottom: 10px;
+}
+
+/* 📝 Input Fields */
+.note-panel #text,
+.note-panel #category {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  width: 100%;
+  max-width: 90%;
+  max-height: 600px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+/* 📝 Error Message */
+.note-panel .error {
+  margin-bottom: 20px;
+  color: red;
+  visibility: hidden;
+}
