@@ -21,7 +21,7 @@ This project was built using:
 ## 📁 Project Structure
 
 ```
-mynotes/
+notatnik/
 ├── index.html
 ├── css/
 │ └── main.css
